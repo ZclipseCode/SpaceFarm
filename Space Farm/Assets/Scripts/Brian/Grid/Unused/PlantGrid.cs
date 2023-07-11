@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class PlantGrid
 {
@@ -77,5 +78,10 @@ public class PlantGrid
         int y;
         GetXY(worldPos, out x, out y);
         return GetValue(x, y);
+    }
+
+    public void Highlight(Vector3 worldPos, Tilemap tilemap, Tile tile)
+    {
+        tilemap.SetTile(Vector3Int.FloorToInt(worldPos), tile);
     }
 }

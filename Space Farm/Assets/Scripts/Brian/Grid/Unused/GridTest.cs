@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class GridTest : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class GridTest : MonoBehaviour
     [SerializeField] float cellSize;
     [SerializeField] Camera cam;
     PlantGrid grid;
+
+    [SerializeField] Tilemap tilemap;
+    [SerializeField] Tile defaultTile;
+    [SerializeField] Tile highlightTile;
 
     private void Start()
     {
@@ -21,6 +26,7 @@ public class GridTest : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             grid.SetValue(GetMouseWorldPosition(), 56);
+            //grid.Highlight(GetMouseWorldPosition(), tilemap, highlightTile);
         }
 
         if (Input.GetMouseButtonDown(1))
@@ -36,5 +42,10 @@ public class GridTest : MonoBehaviour
         worldPos.z = 0;
 
         return worldPos;
+    }
+
+    public PlantGrid GetGrid()
+    {
+        return grid;
     }
 }
