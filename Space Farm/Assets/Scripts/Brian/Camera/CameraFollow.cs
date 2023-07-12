@@ -13,18 +13,18 @@ public class CameraFollow : MonoBehaviour
     {
         if (target != null)
         {
-            Vector3 differance = target.position - transform.position;
+            Vector3 difference = target.position - transform.position;
             if (constrainX)
             {
-                differance.x = 0;
+                difference.x = 0;
             }
 
             if (constraintY)
             {
-                differance.y = 0;
+                difference.y = 0;
             }
 
-            transform.position = new Vector3(transform.position.x + differance.x * smoothingTimePercentage, transform.position.y + differance.y * smoothingTimePercentage, -10f);
+            transform.position = new Vector3(transform.position.x + difference.x * smoothingTimePercentage, transform.position.y + difference.y * smoothingTimePercentage, -10f);
         }
 
     }
