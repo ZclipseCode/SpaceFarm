@@ -11,11 +11,7 @@ public class Crop : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            MoneyManager.overallMoney += value;
-            MoneyManager.currentMoney += value;
-
-            MoneyManager.UpdateMoney();
-
+            MoneyManager.cropsToSellMoney += value;
             Destroy(gameObject);
         }
     }
