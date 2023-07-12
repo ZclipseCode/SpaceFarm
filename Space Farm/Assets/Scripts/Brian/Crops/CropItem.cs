@@ -23,6 +23,10 @@ public class CropItem : MonoBehaviour
             {
                 CropManager.watermelons++;
             }
+            else if (crop == Crop.Weeds)
+            {
+                CropManager.weeds++;
+            }
 
             CropManager.UpdateCrop();
             Destroy(gameObject);

@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class CropManager : MonoBehaviour
 {
-    [SerializeField] int eggplantValue;
-    [SerializeField] int pepperValue;
-    [SerializeField] int watermelonValue;
-
     public static int eggplants;
     public static int peppers;
     public static int watermelons;
+    public static int weeds;
 
     public delegate void UpdateCropDelegate();
     public static UpdateCropDelegate UpdateCrop;

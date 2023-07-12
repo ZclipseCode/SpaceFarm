@@ -75,6 +75,7 @@ MonoBehaviour:
   eggplantValue: 10
   pepperValue: 10
   watermelonValue: 10
+  weedsValue: 1
 --- !u!114 &2054255040441436393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,3 +91,4 @@ MonoBehaviour:
   eggplantText: {fileID: 0}
   pepperText: {fileID: 0}
   watermelonText: {fileID: 0}
+  weedsText: {fileID: 0}

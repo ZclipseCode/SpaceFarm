@@ -6,5 +6,6 @@ public enum Crop
 {
     Eggplant,
     Pepper,
-    Watermelon
+    Watermelon,
+    Weeds
 }
