@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58466f5e4b84c3644b59c0cda9018f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 2
   rb: {fileID: 438889885649412653}
   animator: {fileID: 6875453836467637678}
   isFacingRight: 1
