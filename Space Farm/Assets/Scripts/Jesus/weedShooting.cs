@@ -11,7 +11,6 @@ public class weedShooting : MonoBehaviour
 
     public float bulletForce = 6f;
 
-    // Update is called once per frame
     void Update()
     {
         if (count == 600)
