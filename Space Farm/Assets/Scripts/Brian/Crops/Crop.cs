@@ -7,28 +7,16 @@ public class Crop : MonoBehaviour
 {
     [SerializeField] int value;
 
-    private void Awake()
-    {
-        MoneyManager.UpdateMoney += AddMoney;
-    }
-
-    void AddMoney()
-    {
-        MoneyManager.overallMoney += value;
-        MoneyManager.currentMoney += value;
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            MoneyManager.overallMoney += value;
+            MoneyManager.currentMoney += value;
+
             MoneyManager.UpdateMoney();
+
             Destroy(gameObject);
         }
-    }
-
-    private void OnDestroy()
-    {
-        MoneyManager.UpdateMoney -= AddMoney;
     }
 }

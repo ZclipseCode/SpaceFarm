@@ -10,6 +10,8 @@ public class DisplayMoney : MonoBehaviour
     private void Awake()
     {
         MoneyManager.UpdateMoney += UpdateText;
+
+        text.text = $"${MoneyManager.currentMoney}";
     }
 
     void UpdateText()
