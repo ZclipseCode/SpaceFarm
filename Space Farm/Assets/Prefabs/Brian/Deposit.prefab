@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 745235664659381416}
   - component: {fileID: 6134054165893237404}
   - component: {fileID: 2589916089571881808}
+  - component: {fileID: 6712735025790143031}
   m_Layer: 0
   m_Name: Deposit
   m_TagString: Respawn
@@ -136,6 +137,24 @@ MonoBehaviour:
   interact: 304
   menu: {fileID: 0}
   eggplantValue: 10
-  pepperValue: 10
-  watermelonValue: 10
+  pepperValue: 20
+  watermelonValue: 30
   weedsValue: 1
+  eggplantPrice: 5
+  pepperPrice: 10
+  watermelonPrice: 15
+--- !u!114 &6712735025790143031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8926989815637985392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a850d3e132fb2489d27a4b38cd87db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eggplantSeeds: {fileID: 0}
+  pepperSeeds: {fileID: 0}
+  watermelonSeeds: {fileID: 0}

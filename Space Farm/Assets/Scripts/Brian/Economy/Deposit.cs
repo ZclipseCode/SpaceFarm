@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,10 @@ public class Deposit : MonoBehaviour
     [SerializeField] int pepperValue;
     [SerializeField] int watermelonValue;
     [SerializeField] int weedsValue;
+
+    public int eggplantPrice;
+    public int pepperPrice;
+    public int watermelonPrice;
 
     bool menuOpen;
     bool inBounds;
@@ -70,5 +75,29 @@ public class Deposit : MonoBehaviour
 
         MoneyManager.UpdateMoney();
         CropManager.UpdateCrop();
+    }
+
+    public void BuySeeds(string cropName)
+    {
+        Enum.TryParse(cropName, out Crop crop);
+
+        if (crop == Crop.Eggplant && MoneyManager.currentMoney >= eggplantPrice)
+        {
+            MoneyManager.currentMoney -= eggplantPrice;
+            SeedManager.eggplantSeeds += 1;
+        }
+        else if (crop == Crop.Pepper && MoneyManager.currentMoney >= pepperPrice)
+        {
+            MoneyManager.currentMoney -= pepperPrice;
+            SeedManager.pepperSeeds += 1;
+        }
+        else if (crop == Crop.Watermelon && MoneyManager.currentMoney >= watermelonPrice)
+        {
+            MoneyManager.currentMoney -= watermelonPrice;
+            SeedManager.watermelonSeeds += 1;
+        }
+
+        MoneyManager.UpdateMoney();
+        SeedManager.UpdateSeeds();
     }
 }
