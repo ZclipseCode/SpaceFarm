@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4785747930177844873}
   - component: {fileID: 4663402898529952300}
   - component: {fileID: 2054255040441436393}
+  - component: {fileID: 8459258088696916172}
+  - component: {fileID: 7128693388619592484}
   m_Layer: 0
   m_Name: Inventory Manager
   m_TagString: Untagged
@@ -72,10 +74,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f645749d3ec45ba4c9e409e0de4a9e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eggplantValue: 10
-  pepperValue: 10
-  watermelonValue: 10
-  weedsValue: 1
 --- !u!114 &2054255040441436393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,3 +90,30 @@ MonoBehaviour:
   pepperText: {fileID: 0}
   watermelonText: {fileID: 0}
   weedsText: {fileID: 0}
+--- !u!114 &8459258088696916172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920336151887545175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb2141c8056bf644282453cd16ccd25b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7128693388619592484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920336151887545175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32995c291e77ac443813476d29a0d50c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eggplantSeedText: {fileID: 0}
+  pepperSeedText: {fileID: 0}
+  watermelonSeedText: {fileID: 0}

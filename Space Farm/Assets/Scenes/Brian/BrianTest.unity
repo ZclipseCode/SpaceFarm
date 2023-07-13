@@ -347,6 +347,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7065399603841081762, guid: 65b7de20e860a6b459656da8db478d12, type: 3}
   m_PrefabInstance: {fileID: 522037289}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1023474871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6753086557097925483, guid: 2bc3a881bfbda6d4794a25573c2bfb4a, type: 3}
+  m_PrefabInstance: {fileID: 2255440967255850403}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1253491677
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +403,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1399693127 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1325750489545505973, guid: 2bc3a881bfbda6d4794a25573c2bfb4a, type: 3}
+  m_PrefabInstance: {fileID: 2255440967255850403}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1426617537
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,6 +2693,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2079514762 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2046819819425474041, guid: 2bc3a881bfbda6d4794a25573c2bfb4a, type: 3}
+  m_PrefabInstance: {fileID: 2255440967255850403}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &416548601850997833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2683,6 +2716,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Deposit Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 3166912270725931320, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 177521730}
+    - target: {fileID: 3505260508428586815, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 177521730}
+    - target: {fileID: 3738644325448270879, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 177521730}
     - target: {fileID: 4677522788034581589, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2776,6 +2821,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
+--- !u!114 &416548601850997834 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7087243904554241294, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
+  m_PrefabInstance: {fileID: 416548601850997833}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &416548601850997835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1515215599110105398, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
+  m_PrefabInstance: {fileID: 416548601850997833}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &416548601850997836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1928712562441377688, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
+  m_PrefabInstance: {fileID: 416548601850997833}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1561951018830330839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2852,6 +2930,18 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 535358046}
+    - target: {fileID: 7128693388619592484, guid: 55ee857992b80ea40ad9eecbef9bef3a, type: 3}
+      propertyPath: pepperSeedText
+      value: 
+      objectReference: {fileID: 1399693127}
+    - target: {fileID: 7128693388619592484, guid: 55ee857992b80ea40ad9eecbef9bef3a, type: 3}
+      propertyPath: eggplantSeedText
+      value: 
+      objectReference: {fileID: 2079514762}
+    - target: {fileID: 7128693388619592484, guid: 55ee857992b80ea40ad9eecbef9bef3a, type: 3}
+      propertyPath: watermelonSeedText
+      value: 
+      objectReference: {fileID: 1023474871}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3014,6 +3104,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6712735025790143031, guid: b7ea2d1e6e2611b4287d32505802b64b, type: 3}
+      propertyPath: pepperSeeds
+      value: 
+      objectReference: {fileID: 416548601850997835}
+    - target: {fileID: 6712735025790143031, guid: b7ea2d1e6e2611b4287d32505802b64b, type: 3}
+      propertyPath: eggplantSeeds
+      value: 
+      objectReference: {fileID: 416548601850997836}
+    - target: {fileID: 6712735025790143031, guid: b7ea2d1e6e2611b4287d32505802b64b, type: 3}
+      propertyPath: watermelonSeeds
+      value: 
+      objectReference: {fileID: 416548601850997834}
     - target: {fileID: 8926989815637985392, guid: b7ea2d1e6e2611b4287d32505802b64b, type: 3}
       propertyPath: m_Name
       value: Deposit
