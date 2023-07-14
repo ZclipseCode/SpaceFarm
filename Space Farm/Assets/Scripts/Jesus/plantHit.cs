@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class plantHit : MonoBehaviour
@@ -8,30 +10,33 @@ public class plantHit : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask playerLayer;
     public GameObject weapon;
+    public GameObject player;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))//change it to if in range
-        {
-            Attack();
-        }
+            //Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
+            //foreach(Collider2D objects in hitPlayer)
+            if (Input.GetKeyDown(KeyCode.Space))//change it to if in range
+            {
+                //if (objects == player)
+                //{
+                Attack();
+                //}
+            }
     }
 
     void Attack()
     {
+        //Spawn weapon
         GameObject toolOfPain = Instantiate(weapon, attackPoint.position, attackPoint.rotation);
-        toolOfPain.transform.localScale.Set(20, 90, 1);
-        pause(); //pause then remove
-        //Destroy(toolOfPain);
+        //Destroy weapon
+        Destruction(toolOfPain);
 
     }
 
-    IEnumerator pause()
+    IEnumerator Destruction(GameObject toDestroy)
     {
-        //Print the time of when the function is first called.
-        //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSecondsRealtime(5);
-
-        //After we have waited 5 seconds print the time again.
+        yield return new WaitForSeconds(1);
+        Destroy(toDestroy);
     }
 }
