@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlantSeed : MonoBehaviour
 {
-    [SerializeField] Crop crop;
+    Crop crop;
     [SerializeField] HighlightTilemap highlightTilemap;
     [SerializeField] GameObject eggplantSeed;
     [SerializeField] GameObject pepperSeed;
@@ -12,6 +12,9 @@ public class PlantSeed : MonoBehaviour
     [SerializeField] float eggplantGrowthTime;
     [SerializeField] float pepperGrowthTime;
     [SerializeField] float watermelonGrowthTime;
+
+    float scroll;
+    [SerializeField] GameObject[] selectionLines;
 
     private void Update()
     {
@@ -24,7 +27,62 @@ public class PlantSeed : MonoBehaviour
             }
         }
 
-        // scroll
+        scroll += Input.mouseScrollDelta.y;
+
+        if (scroll > 2)
+        {
+            scroll = 0;
+        }
+        if (scroll < 0)
+        {
+            scroll = 2;
+        }
+
+        if (scroll == 0)
+        {
+            crop = Crop.Eggplant;
+            for (int i = 0; i < selectionLines.Length; i++)
+            {
+                if (i == 0)
+                {
+                    selectionLines[i].SetActive(true);
+                }
+                else
+                {
+                    selectionLines[i].SetActive(false);
+                }
+            }
+        }
+        else if (scroll == 1)
+        {
+            crop = Crop.Pepper;
+            for (int i = 0; i < selectionLines.Length; i++)
+            {
+                if (i == 1)
+                {
+                    selectionLines[i].SetActive(true);
+                }
+                else
+                {
+                    selectionLines[i].SetActive(false);
+                }
+            }
+        }
+        else if (scroll == 2)
+        {
+            crop = Crop.Watermelon;
+            for (int i = 0; i < selectionLines.Length; i++)
+            {
+                if (i == 2)
+                {
+                    selectionLines[i].SetActive(true);
+                }
+                else
+                {
+                    selectionLines[i].SetActive(false);
+                }
+            }
+        }
     }
 
     IEnumerator Plant(Vector3 pos)

@@ -207,7 +207,7 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
-  attackDamge: 40
+  attackDamage: 40
   attackRate: 2
 --- !u!114 &6688226554663105478
 MonoBehaviour:
@@ -234,7 +234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6823597f643609647af844b96a928367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crop: 0
   highlightTilemap: {fileID: 0}
   eggplantSeed: {fileID: 66636689350661465, guid: 29627696e460cf24b9621c736fd7e938, type: 3}
   pepperSeed: {fileID: 7227192710276024456, guid: 887c363abf865674ab69389ca7c2cec4, type: 3}
@@ -242,3 +241,7 @@ MonoBehaviour:
   eggplantGrowthTime: 2
   pepperGrowthTime: 2
   watermelonGrowthTime: 2
+  selectionLines:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
