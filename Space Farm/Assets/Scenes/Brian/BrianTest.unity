@@ -2795,101 +2795,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 10805445}
     m_Modifications:
     - target: {fileID: 71712759867344497, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 71712759867344497, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 71712759867344497, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 177521730}
-    - target: {fileID: 71712759867344497, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 71712759867344497, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyUpgrade
-      objectReference: {fileID: 0}
-    - target: {fileID: 71712759867344497, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Deposit, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 71712759867344497, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: MovementSpeed
-      objectReference: {fileID: 0}
-    - target: {fileID: 71712759867344497, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 333673883702425410, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333673883702425410, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 333673883702425410, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 177521730}
     - target: {fileID: 333673883702425410, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 333673883702425410, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyUpgrade
-      objectReference: {fileID: 0}
-    - target: {fileID: 333673883702425410, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Deposit, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 333673883702425410, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Range
-      objectReference: {fileID: 0}
-    - target: {fileID: 333673883702425410, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 904147981269133190, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 904147981269133190, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 904147981269133190, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 177521730}
     - target: {fileID: 904147981269133190, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 904147981269133190, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyUpgrade
-      objectReference: {fileID: 0}
-    - target: {fileID: 904147981269133190, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Deposit, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 904147981269133190, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: AttackSpeed
-      objectReference: {fileID: 0}
-    - target: {fileID: 904147981269133190, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 177521730}
     - target: {fileID: 1501447787294629600, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
       propertyPath: m_Name
       value: Deposit Menu
@@ -2991,69 +2907,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6508420681510583322, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6508420681510583322, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6508420681510583322, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 177521730}
-    - target: {fileID: 6508420681510583322, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6508420681510583322, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyUpgrade
-      objectReference: {fileID: 0}
-    - target: {fileID: 6508420681510583322, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Deposit, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6508420681510583322, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Damage
-      objectReference: {fileID: 0}
-    - target: {fileID: 6508420681510583322, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394284994602801035, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394284994602801035, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394284994602801035, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 177521730}
     - target: {fileID: 8394284994602801035, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394284994602801035, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BuyUpgrade
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394284994602801035, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Deposit, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394284994602801035, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Health
-      objectReference: {fileID: 0}
-    - target: {fileID: 8394284994602801035, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 177521730}
     - target: {fileID: 8978733795501033969, guid: 33f55049d4bd3374985b7cc62c32d138, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
