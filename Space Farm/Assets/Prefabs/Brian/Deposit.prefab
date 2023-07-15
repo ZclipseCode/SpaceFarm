@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &745235664659381416
 SpriteRenderer:
@@ -143,6 +143,17 @@ MonoBehaviour:
   eggplantPrice: 5
   pepperPrice: 10
   watermelonPrice: 15
+  damageValue: 10
+  attackSpeedValue: 1
+  rangeValue: 1
+  movementSpeedValue: 1
+  healthValue: 20
+  damagePrice: 10
+  attackSpeedPrice: 10
+  rangePrice: 10
+  movementSpeedPrice: 10
+  healthPrice: 10
+  playerUpgrades: {fileID: 0}
 --- !u!114 &6712735025790143031
 MonoBehaviour:
   m_ObjectHideFlags: 0
