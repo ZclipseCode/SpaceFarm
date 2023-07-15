@@ -8,6 +8,7 @@ public class Deposit : MonoBehaviour
     [SerializeField] KeyCode interact; //put this on player
     [SerializeField] GameObject menu;
 
+    [Header("Seeds")]
     [SerializeField] int eggplantValue;
     [SerializeField] int pepperValue;
     [SerializeField] int watermelonValue;
@@ -19,6 +20,20 @@ public class Deposit : MonoBehaviour
 
     public static bool menuOpen;
     bool inBounds;
+
+    [Header("Upgrades")]
+    [SerializeField] int damageValue;
+    [SerializeField] int attackSpeedValue;
+    [SerializeField] int rangeValue;
+    [SerializeField] int movementSpeedValue;
+    [SerializeField] int healthValue;
+    public int damagePrice;
+    public int attackSpeedPrice;
+    public int rangePrice;
+    public int movementSpeedPrice;
+    public int healthPrice;
+    [SerializeField] PlayerUpgrades playerUpgrades;
+    int[] totalUpgrades = new int[5];
 
     private void Start()
     {
@@ -99,5 +114,43 @@ public class Deposit : MonoBehaviour
 
         MoneyManager.UpdateMoney();
         SeedManager.UpdateSeeds();
+    }
+
+    public void BuyUpgrade(string upgradeName)
+    {
+        Enum.TryParse(upgradeName, out Upgrade upgrade);
+
+        if (upgrade == Upgrade.Damage && totalUpgrades[0] <= 2 && MoneyManager.currentMoney >= damagePrice)
+        {
+            MoneyManager.currentMoney -= damagePrice;
+            totalUpgrades[0]++;
+            playerUpgrades.IncreaseDamage(damageValue);
+        }
+        else if (upgrade == Upgrade.AttackSpeed && totalUpgrades[1] <= 2 && MoneyManager.currentMoney >= attackSpeedPrice)
+        {
+            MoneyManager.currentMoney -= attackSpeedPrice;
+            totalUpgrades[1]++;
+            playerUpgrades.IncreaseAttackRate(attackSpeedValue);
+        }
+        else if (upgrade == Upgrade.Range && totalUpgrades[2] <= 2 && MoneyManager.currentMoney >= rangePrice)
+        {
+            MoneyManager.currentMoney -= rangePrice;
+            totalUpgrades[2]++;
+            playerUpgrades.IncreaseRange(rangeValue);
+        }
+        else if (upgrade == Upgrade.MovementSpeed && totalUpgrades[3] <= 2 && MoneyManager.currentMoney >= movementSpeedPrice)
+        {
+            MoneyManager.currentMoney -= movementSpeedPrice;
+            totalUpgrades[3]++;
+            playerUpgrades.IncreaseSpeed(movementSpeedValue);
+        }
+        else if (upgrade == Upgrade.Health && totalUpgrades[4] <= 2 && MoneyManager.currentMoney >= healthPrice)
+        {
+            MoneyManager.currentMoney -= healthPrice;
+            totalUpgrades[4]++;
+            playerUpgrades.IncreaseHealth(healthValue);
+        }
+
+        MoneyManager.UpdateMoney();
     }
 }
