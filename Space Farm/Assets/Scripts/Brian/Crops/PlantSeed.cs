@@ -27,6 +27,51 @@ public class PlantSeed : MonoBehaviour
             }
         }
 
+        if (selectionLines[0] != null)
+        {
+            SelectSeed();
+        }
+    }
+
+    IEnumerator Plant(Vector3 pos)
+    {
+        if (crop == Crop.Eggplant && SeedManager.eggplantSeeds > 0)
+        {
+            GameObject es = Instantiate(eggplantSeed, pos, Quaternion.identity);
+
+            SeedManager.eggplantSeeds--;
+            SeedManager.UpdateSeeds?.Invoke();
+
+            yield return new WaitForSeconds(eggplantGrowthTime);
+
+            es.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
+        }
+        else if (crop == Crop.Pepper && SeedManager.pepperSeeds > 0)
+        {
+            GameObject ps = Instantiate(pepperSeed, pos, Quaternion.identity);
+
+            SeedManager.pepperSeeds--;
+            SeedManager.UpdateSeeds?.Invoke();
+
+            yield return new WaitForSeconds(pepperGrowthTime);
+
+            ps.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
+        }
+        else if (crop == Crop.Watermelon && SeedManager.watermelonSeeds > 0)
+        {
+            GameObject ws = Instantiate(watermelonSeed, pos, Quaternion.identity);
+
+            SeedManager.watermelonSeeds--;
+            SeedManager.UpdateSeeds?.Invoke();
+
+            yield return new WaitForSeconds(watermelonGrowthTime);
+
+            ws.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
+        }
+    }
+
+    void SelectSeed()
+    {
         scroll += Input.mouseScrollDelta.y;
 
         if (scroll > 2)
@@ -82,43 +127,6 @@ public class PlantSeed : MonoBehaviour
                     selectionLines[i].SetActive(false);
                 }
             }
-        }
-    }
-
-    IEnumerator Plant(Vector3 pos)
-    {
-        if (crop == Crop.Eggplant && SeedManager.eggplantSeeds > 0)
-        {
-            GameObject es = Instantiate(eggplantSeed, pos, Quaternion.identity);
-
-            SeedManager.eggplantSeeds--;
-            SeedManager.UpdateSeeds?.Invoke();
-
-            yield return new WaitForSeconds(eggplantGrowthTime);
-
-            es.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
-        }
-        else if (crop == Crop.Pepper && SeedManager.pepperSeeds > 0)
-        {
-            GameObject ps = Instantiate(pepperSeed, pos, Quaternion.identity);
-
-            SeedManager.pepperSeeds--;
-            SeedManager.UpdateSeeds?.Invoke();
-
-            yield return new WaitForSeconds(pepperGrowthTime);
-
-            ps.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
-        }
-        else if (crop == Crop.Watermelon && SeedManager.watermelonSeeds > 0)
-        {
-            GameObject ws = Instantiate(watermelonSeed, pos, Quaternion.identity);
-
-            SeedManager.watermelonSeeds--;
-            SeedManager.UpdateSeeds?.Invoke();
-
-            yield return new WaitForSeconds(watermelonGrowthTime);
-
-            ws.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
         }
     }
 }
