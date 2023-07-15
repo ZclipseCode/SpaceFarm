@@ -17,7 +17,7 @@ public class Deposit : MonoBehaviour
     public int pepperPrice;
     public int watermelonPrice;
 
-    bool menuOpen;
+    public static bool menuOpen;
     bool inBounds;
 
     private void Start()
