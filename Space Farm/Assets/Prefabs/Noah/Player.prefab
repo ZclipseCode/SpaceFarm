@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8113576265925777393}
   - component: {fileID: 6688226554663105478}
   - component: {fileID: 7937353857194781201}
+  - component: {fileID: 7648252847685630878}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -134,6 +135,10 @@ MonoBehaviour:
   rb: {fileID: 438889885649412653}
   animator: {fileID: 6875453836467637678}
   isFacingRight: 1
+  dodgeButton: 104
+  isDodging: 0
+  dodgeTime: 0.2
+  dodgeForce: 2.5
 --- !u!95 &6875453836467637678
 Animator:
   serializedVersion: 5
@@ -222,6 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
 --- !u!114 &7937353857194781201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,3 +251,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &7648252847685630878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5625734604684898701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f15b4e8d699b2a547b2017254c3ddcf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
