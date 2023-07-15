@@ -294,19 +294,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7937353857194781201, guid: 65b7de20e860a6b459656da8db478d12, type: 3}
+      propertyPath: highlightTilemap
+      value: 
+      objectReference: {fileID: 1631755895}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5625734604684898701, guid: 65b7de20e860a6b459656da8db478d12, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 937243257}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65b7de20e860a6b459656da8db478d12, type: 3}
---- !u!1 &522037290 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5625734604684898701, guid: 65b7de20e860a6b459656da8db478d12, type: 3}
-  m_PrefabInstance: {fileID: 522037289}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &535358046 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 968894928908119273, guid: 2bc3a881bfbda6d4794a25573c2bfb4a, type: 3}
@@ -355,26 +351,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7065399603841081762, guid: 65b7de20e860a6b459656da8db478d12, type: 3}
   m_PrefabInstance: {fileID: 522037289}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &937243257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 522037290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6823597f643609647af844b96a928367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  crop: 0
-  highlightTilemap: {fileID: 1631755895}
-  eggplantSeed: {fileID: 66636689350661465, guid: 29627696e460cf24b9621c736fd7e938, type: 3}
-  pepperSeed: {fileID: 7227192710276024456, guid: 887c363abf865674ab69389ca7c2cec4, type: 3}
-  watermelonSeed: {fileID: 2869245139762252400, guid: eba4b081260ce944e961d2a50f97ae5f, type: 3}
-  eggplantGrowthTime: 2
-  pepperGrowthTime: 2
-  watermelonGrowthTime: 2
 --- !u!114 &1023474871 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6753086557097925483, guid: 2bc3a881bfbda6d4794a25573c2bfb4a, type: 3}
