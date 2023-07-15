@@ -91,6 +91,9 @@ public class PlantSeed : MonoBehaviour
         {
             GameObject es = Instantiate(eggplantSeed, pos, Quaternion.identity);
 
+            SeedManager.eggplantSeeds--;
+            SeedManager.UpdateSeeds?.Invoke();
+
             yield return new WaitForSeconds(eggplantGrowthTime);
 
             es.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
@@ -99,6 +102,9 @@ public class PlantSeed : MonoBehaviour
         {
             GameObject ps = Instantiate(pepperSeed, pos, Quaternion.identity);
 
+            SeedManager.pepperSeeds--;
+            SeedManager.UpdateSeeds?.Invoke();
+
             yield return new WaitForSeconds(pepperGrowthTime);
 
             ps.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
@@ -106,6 +112,9 @@ public class PlantSeed : MonoBehaviour
         else if (crop == Crop.Watermelon && SeedManager.watermelonSeeds > 0)
         {
             GameObject ws = Instantiate(watermelonSeed, pos, Quaternion.identity);
+
+            SeedManager.watermelonSeeds--;
+            SeedManager.UpdateSeeds?.Invoke();
 
             yield return new WaitForSeconds(watermelonGrowthTime);
 
