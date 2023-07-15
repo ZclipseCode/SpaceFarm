@@ -12,6 +12,8 @@ public class HighlightTilemap : MonoBehaviour
     Vector3 currentTilePos;
     bool firstTileFound;
 
+    Tile currentTile;
+
     private void Start()
     {
         tilemap = GetComponent<Tilemap>();
@@ -24,6 +26,8 @@ public class HighlightTilemap : MonoBehaviour
             currentTilePos = GetWorldPosition(Input.mousePosition);
             tilemap.SetTile(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)), highlightTile);
 
+            currentTile = tilemap.GetTile<Tile>(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)));
+
             firstTileFound = true;
         }
 
@@ -33,6 +37,8 @@ public class HighlightTilemap : MonoBehaviour
 
             currentTilePos = GetWorldPosition(Input.mousePosition);
             tilemap.SetTile(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)), highlightTile);
+
+            currentTile = tilemap.GetTile<Tile>(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)));
         }
     }
 
@@ -42,5 +48,10 @@ public class HighlightTilemap : MonoBehaviour
         worldPos.z = 0;
 
         return worldPos;
+    }
+
+    public Tile GetCurrentTile()
+    {
+        return currentTile;
     }
 }
