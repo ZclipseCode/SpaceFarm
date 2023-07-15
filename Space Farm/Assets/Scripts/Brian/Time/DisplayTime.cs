@@ -15,6 +15,6 @@ public class DisplayTime : MonoBehaviour
 
     void Update()
     {
-        text.text = $"Time Left: {dayCycle.GetCurrentTime()}";
+        text.text = $"Time: {dayCycle.GetCurrentTime()}";
     }
 }
