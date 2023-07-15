@@ -227,6 +227,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &164961485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 164961487}
+  m_Layer: 0
+  m_Name: Temp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &164961487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164961485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.6989646, y: -0.20069103, z: -0.0629336}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &177521730 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2589916089571881808, guid: b7ea2d1e6e2611b4287d32505802b64b, type: 3}
@@ -540,7 +571,7 @@ GameObject:
   - component: {fileID: 1631755892}
   - component: {fileID: 1631755891}
   - component: {fileID: 1631755894}
-  - component: {fileID: 1631755893}
+  - component: {fileID: 1631755895}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -2552,21 +2583,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1631755893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631755889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d8c1d81cd716c24ab1b0f46e5cfb900, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultTile: {fileID: 11400000, guid: c4a8d86cd9f2481469222df37fa61d03, type: 2}
-  highlightTile: {fileID: 11400000, guid: d9394b795e3eba84ca6fb8c36228a555, type: 2}
-  cam: {fileID: 1426617539}
 --- !u!19719996 &1631755894
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -2603,6 +2619,21 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1631755895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631755889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d8c1d81cd716c24ab1b0f46e5cfb900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultTile: {fileID: 11400000, guid: c4a8d86cd9f2481469222df37fa61d03, type: 2}
+  highlightTile: {fileID: 11400000, guid: d9394b795e3eba84ca6fb8c36228a555, type: 2}
+  cam: {fileID: 1426617539}
 --- !u!114 &1644762606 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7998875166944518728, guid: 2bc3a881bfbda6d4794a25573c2bfb4a, type: 3}

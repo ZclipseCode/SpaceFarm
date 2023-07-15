@@ -21,22 +21,22 @@ public class HighlightTilemap : MonoBehaviour
     {
         if (!firstTileFound)
         {
-            currentTilePos = GetMouseWorldPosition(Input.mousePosition);
-            tilemap.SetTile(tilemap.WorldToCell(GetMouseWorldPosition(Input.mousePosition)), highlightTile);
+            currentTilePos = GetWorldPosition(Input.mousePosition);
+            tilemap.SetTile(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)), highlightTile);
 
             firstTileFound = true;
         }
 
-        if (currentTilePos != GetMouseWorldPosition(Input.mousePosition))
+        if (currentTilePos != GetWorldPosition(Input.mousePosition))
         {
             tilemap.SetTile(Vector3Int.FloorToInt(currentTilePos), defaultTile);
 
-            currentTilePos = GetMouseWorldPosition(Input.mousePosition);
-            tilemap.SetTile(tilemap.WorldToCell(GetMouseWorldPosition(Input.mousePosition)), highlightTile);
+            currentTilePos = GetWorldPosition(Input.mousePosition);
+            tilemap.SetTile(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)), highlightTile);
         }
     }
 
-    public Vector3 GetMouseWorldPosition(Vector3 pos)
+    public Vector3 GetWorldPosition(Vector3 pos)
     {
         Vector3 worldPos = cam.ScreenToWorldPoint(pos);
         worldPos.z = 0;
