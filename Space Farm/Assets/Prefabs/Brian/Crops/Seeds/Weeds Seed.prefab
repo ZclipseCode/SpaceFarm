@@ -137,3 +137,5 @@ MonoBehaviour:
   pepperAlien: {fileID: 5496689081995118558, guid: 22d8cdf8c4dc05d4693a02e2b007e9e0, type: 3}
   watermelonAlien: {fileID: 7717115723211347727, guid: 17501e1be154b41489517b6d40c96656, type: 3}
   weedsAlien: {fileID: 5176573146656353957, guid: f1f674160732dc246aabd1a387dff05f, type: 3}
+  isWeeds: 1
+  weedGrowthRate: 3

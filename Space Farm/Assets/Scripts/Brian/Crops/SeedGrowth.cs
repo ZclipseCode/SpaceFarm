@@ -9,6 +9,24 @@ public class SeedGrowth : MonoBehaviour
     [SerializeField] GameObject watermelonAlien;
     [SerializeField] GameObject weedsAlien;
 
+    [SerializeField] bool isWeeds;
+    [SerializeField] float weedGrowthRate = 3;
+
+    private void Start()
+    {
+        if (isWeeds)
+        {
+            StartCoroutine(WeedsGrowth());
+        }
+    }
+
+    IEnumerator WeedsGrowth()
+    {
+        yield return new WaitForSeconds(weedGrowthRate);
+
+        FullGrowth(Crop.Weeds, transform.position);
+    }
+
     public void FullGrowth(Crop crop, Vector3 pos)
     {
         if (crop == Crop.Eggplant)

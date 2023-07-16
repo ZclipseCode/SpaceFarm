@@ -173,4 +173,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 0
   damage: 5
-  expirationTime: 20
+  expirationTime: 5
