@@ -244,9 +244,9 @@ MonoBehaviour:
   eggplantSeed: {fileID: 66636689350661465, guid: 29627696e460cf24b9621c736fd7e938, type: 3}
   pepperSeed: {fileID: 7227192710276024456, guid: 887c363abf865674ab69389ca7c2cec4, type: 3}
   watermelonSeed: {fileID: 2869245139762252400, guid: eba4b081260ce944e961d2a50f97ae5f, type: 3}
-  eggplantGrowthTime: 5
-  pepperGrowthTime: 15
-  watermelonGrowthTime: 25
+  eggplantGrowthTime: 2
+  pepperGrowthTime: 8
+  watermelonGrowthTime: 14
   selectionLines:
   - {fileID: 0}
   - {fileID: 0}

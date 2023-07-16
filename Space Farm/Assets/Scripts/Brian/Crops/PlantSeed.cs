@@ -23,7 +23,7 @@ public class PlantSeed : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (!hit.collider.CompareTag("Plant"))
             {
-                StartCoroutine(Plant(highlightTilemap.GetWorldPosition(Input.mousePosition)));
+                StartCoroutine(Plant(highlightTilemap.GetWorldPosition(Input.mousePosition), crop));
             }
         }
 
@@ -33,9 +33,9 @@ public class PlantSeed : MonoBehaviour
         }
     }
 
-    IEnumerator Plant(Vector3 pos)
+    IEnumerator Plant(Vector3 pos, Crop c)
     {
-        if (crop == Crop.Eggplant && SeedManager.eggplantSeeds > 0)
+        if (c == Crop.Eggplant && SeedManager.eggplantSeeds > 0)
         {
             GameObject es = Instantiate(eggplantSeed, pos, Quaternion.identity);
 
@@ -44,9 +44,9 @@ public class PlantSeed : MonoBehaviour
 
             yield return new WaitForSeconds(eggplantGrowthTime);
 
-            es.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
+            es.GetComponent<SeedGrowth>().FullGrowth(c, pos);
         }
-        else if (crop == Crop.Pepper && SeedManager.pepperSeeds > 0)
+        else if (c == Crop.Pepper && SeedManager.pepperSeeds > 0)
         {
             GameObject ps = Instantiate(pepperSeed, pos, Quaternion.identity);
 
@@ -55,9 +55,9 @@ public class PlantSeed : MonoBehaviour
 
             yield return new WaitForSeconds(pepperGrowthTime);
 
-            ps.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
+            ps.GetComponent<SeedGrowth>().FullGrowth(c, pos);
         }
-        else if (crop == Crop.Watermelon && SeedManager.watermelonSeeds > 0)
+        else if (c == Crop.Watermelon && SeedManager.watermelonSeeds > 0)
         {
             GameObject ws = Instantiate(watermelonSeed, pos, Quaternion.identity);
 
@@ -66,7 +66,7 @@ public class PlantSeed : MonoBehaviour
 
             yield return new WaitForSeconds(watermelonGrowthTime);
 
-            ws.GetComponent<SeedGrowth>().FullGrowth(crop, pos);
+            ws.GetComponent<SeedGrowth>().FullGrowth(c, pos);
         }
     }
 

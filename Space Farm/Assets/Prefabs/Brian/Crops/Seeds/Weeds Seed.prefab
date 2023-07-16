@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2169430565577285414
 SpriteRenderer:
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4514c3fa286984abd1c9cf7fdbd30b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eggplantAlien: {fileID: 845704326839841578, guid: 931aa06ca6da13544b2a2033ab892a32, type: 3}
-  pepperAlien: {fileID: 845704326839841578, guid: 931aa06ca6da13544b2a2033ab892a32, type: 3}
-  watermelonAlien: {fileID: 845704326839841578, guid: 931aa06ca6da13544b2a2033ab892a32, type: 3}
-  weedsAlien: {fileID: 845704326839841578, guid: 931aa06ca6da13544b2a2033ab892a32, type: 3}
+  eggplantAlien: {fileID: 6146712085451470306, guid: 443581276d6171a4cb913407cd1d6add, type: 3}
+  pepperAlien: {fileID: 5496689081995118558, guid: 22d8cdf8c4dc05d4693a02e2b007e9e0, type: 3}
+  watermelonAlien: {fileID: 7717115723211347727, guid: 17501e1be154b41489517b6d40c96656, type: 3}
+  weedsAlien: {fileID: 5176573146656353957, guid: f1f674160732dc246aabd1a387dff05f, type: 3}
