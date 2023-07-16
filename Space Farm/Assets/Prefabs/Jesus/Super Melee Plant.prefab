@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 2925761325501499351}
   - component: {fileID: 2101359800589690042}
   - component: {fileID: 5478619565788319747}
+  - component: {fileID: 9143485606529528903}
   m_Layer: 6
   m_Name: Super Melee Plant
   m_TagString: Untagged
@@ -300,4 +301,18 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.16
+--- !u!114 &9143485606529528903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7717115723211347727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5411e85468e21724a96de85e78d2b2aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 75
+  crop: {fileID: 2443518302593166525, guid: a6f345ea42bf67d48b14475779c77cea, type: 3}

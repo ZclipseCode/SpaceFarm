@@ -207,12 +207,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38049b83e5f17648b55d27e7867162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 2
+  attackRange: 1
   attackButton: 32
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
-  attackDamage: 40
+  attackDamage: 5
   attackRate: 2
 --- !u!114 &6688226554663105478
 MonoBehaviour:
