@@ -9,4 +9,13 @@ public class MoneyManager : MonoBehaviour
 
     public delegate void UpdateMoneyDelegate();
     public static UpdateMoneyDelegate UpdateMoney;
+
+    [SerializeField] int startingMoney;
+
+    private void Start()
+    {
+        overallMoney = startingMoney;
+        currentMoney = startingMoney;
+        UpdateMoney();
+    }
 }
