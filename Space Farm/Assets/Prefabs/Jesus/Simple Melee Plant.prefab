@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 2027061564265049067}
   - component: {fileID: 2907696685428146904}
   - component: {fileID: 4015370211494171853}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Simple Melee Plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6146712085451470306}
-  m_LocalRotation: {x: -0, y: -0, z: -0.008788182, w: 0.9999614}
+  m_LocalRotation: {x: 0, y: 0, z: -0.008787693, w: 0.99996144}
   m_LocalPosition: {x: 1.45, y: 1.38, z: 0}
   m_LocalScale: {x: 6.3887105, y: 6.297186, z: 1}
   m_ConstrainProportionsScale: 0
@@ -161,7 +161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1628961022217376230}
-  target: {fileID: 0}
 --- !u!114 &2907696685428146904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +180,8 @@ MonoBehaviour:
     m_Bits: 0
   weapon: {fileID: 8731116679120254773, guid: 9c13fa77fbe10bf469966ea9ced67295, type: 3}
   targetTag: Player
+  damage: 15
+  attackDelay: 1
 --- !u!58 &4015370211494171853
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -196,7 +197,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -210,7 +211,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

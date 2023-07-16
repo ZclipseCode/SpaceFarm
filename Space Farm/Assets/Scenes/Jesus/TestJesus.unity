@@ -354,10 +354,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2027061564265049067, guid: 443581276d6171a4cb913407cd1d6add, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1973800789}
     - target: {fileID: 3026338134570900845, guid: 443581276d6171a4cb913407cd1d6add, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -406,6 +402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Simple Melee Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 6146712085451470306, guid: 443581276d6171a4cb913407cd1d6add, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -422,6 +422,10 @@ PrefabInstance:
     - target: {fileID: 5176573146656353957, guid: f1f674160732dc246aabd1a387dff05f, type: 3}
       propertyPath: m_Name
       value: Weed
+      objectReference: {fileID: 0}
+    - target: {fileID: 5176573146656353957, guid: f1f674160732dc246aabd1a387dff05f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8694293547489197859, guid: f1f674160732dc246aabd1a387dff05f, type: 3}
       propertyPath: m_RootOrder
