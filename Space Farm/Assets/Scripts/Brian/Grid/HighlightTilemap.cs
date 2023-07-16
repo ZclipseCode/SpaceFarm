@@ -24,7 +24,7 @@ public class HighlightTilemap : MonoBehaviour
         if (!firstTileFound)
         {
             currentTilePos = GetWorldPosition(Input.mousePosition);
-            tilemap.SetTile(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)), highlightTile);
+            //tilemap.SetTile(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)), highlightTile);
 
             currentTile = tilemap.GetTile<Tile>(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)));
 
@@ -33,10 +33,10 @@ public class HighlightTilemap : MonoBehaviour
 
         if (currentTilePos != GetWorldPosition(Input.mousePosition))
         {
-            tilemap.SetTile(Vector3Int.FloorToInt(currentTilePos), defaultTile);
+           // tilemap.SetTile(Vector3Int.FloorToInt(currentTilePos), defaultTile);
 
             currentTilePos = GetWorldPosition(Input.mousePosition);
-            tilemap.SetTile(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)), highlightTile);
+            //tilemap.SetTile(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)), highlightTile);
 
             currentTile = tilemap.GetTile<Tile>(tilemap.WorldToCell(GetWorldPosition(Input.mousePosition)));
         }
