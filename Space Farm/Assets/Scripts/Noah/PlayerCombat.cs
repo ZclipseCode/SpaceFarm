@@ -11,6 +11,8 @@ public class PlayerCombat : MonoBehaviour
     public float attackRate = 2f;
     float nextAttackTime = 0;
 
+    [SerializeField] GameObject slash;
+
     // Update is called once per frame
     void Update()
     {
@@ -25,12 +27,24 @@ public class PlayerCombat : MonoBehaviour
     }
     void Attack()
     {
+        StartCoroutine(Slash());
+
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayers);
 
         foreach(Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
+    }
+
+    IEnumerator Slash()
+    {
+        GameObject s = Instantiate(slash, transform.position, Quaternion.identity);
+        s.transform.SetParent(transform);
+
+        yield return new WaitForSeconds(0.2f);
+
+        Destroy(s);
     }
 
     void OnDrawGizmosSelected()

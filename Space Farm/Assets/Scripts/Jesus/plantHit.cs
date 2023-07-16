@@ -20,6 +20,7 @@ public class plantHit : MonoBehaviour
     [SerializeField] float attackDelay = 1;
     bool inRange;
     bool isAttacking;
+    [SerializeField] GameObject slash;
 
     //void Update()
     //{
@@ -53,12 +54,24 @@ public class plantHit : MonoBehaviour
 
         yield return new WaitForSeconds(attackDelay);
 
+        StartCoroutine(Slash());
+
         if (inRange)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().TakeDamage(damage);
         }
 
         isAttacking = false;
+    }
+
+    IEnumerator Slash()
+    {
+        GameObject s = Instantiate(slash, transform.position, Quaternion.identity);
+        s.transform.SetParent(transform);
+
+        yield return new WaitForSeconds(0.2f);
+
+        Destroy(s);
     }
 
     //IEnumerator Destruction(GameObject toDestroy)

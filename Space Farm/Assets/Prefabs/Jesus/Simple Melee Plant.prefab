@@ -183,6 +183,7 @@ MonoBehaviour:
   targetTag: Player
   damage: 15
   attackDelay: 1
+  slash: {fileID: 8853022901886208617, guid: d813a75e5cc3dc94883b472069fb8c0b, type: 3}
 --- !u!58 &4015370211494171853
 CircleCollider2D:
   m_ObjectHideFlags: 0

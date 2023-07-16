@@ -214,6 +214,7 @@ MonoBehaviour:
     m_Bits: 64
   attackDamage: 5
   attackRate: 2
+  slash: {fileID: 8853022901886208617, guid: d813a75e5cc3dc94883b472069fb8c0b, type: 3}
 --- !u!114 &6688226554663105478
 MonoBehaviour:
   m_ObjectHideFlags: 0
