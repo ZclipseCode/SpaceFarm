@@ -7,9 +7,14 @@ public class headaim : MonoBehaviour
     // Start is called before the first frame update
     public Rigidbody2D rb;
     //public Camera cam;
-    public GameObject target;
+    GameObject target;
 
     Vector2 targetPos;
+
+    private void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player");
+    }
 
     // Update is called once per frame
     void Update()
