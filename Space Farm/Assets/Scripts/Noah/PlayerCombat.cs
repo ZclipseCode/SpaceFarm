@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
-    public float attackRange = 0.5f;
+    public static float attackRange = 1;
     public KeyCode attackButton;
     public LayerMask enemyLayers;
-    public int attackDamage = 40;
-    public float attackRate = 2f;
+    public static int attackDamage = 5;
+    public static float attackRate = 2f;
     float nextAttackTime = 0;
 
     [SerializeField] GameObject slash;

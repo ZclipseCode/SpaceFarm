@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Brian/BrianTest.unity
-    guid: bfeca49af1a1bcc418710bd3415362c2
+    path: Assets/Scenes/Brian/Title.unity
+    guid: 70fd7491fc2613749aa7b5d0a6a3605f
+  - enabled: 1
+    path: Assets/Scenes/Noah/Level.unity
+    guid: 91fad9a57f5b8db4781e60c64e580624
   - enabled: 1
     path: Assets/Scenes/Brian/Results.unity
     guid: d618da7cd23d5194fb3699da9eb86b3c
+  - enabled: 1
+    path: Assets/Scenes/Brian/GameOver.unity
+    guid: e214ede9d2d01ef4ca3d18b22e61248e
   m_configObjects: {}

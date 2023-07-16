@@ -131,11 +131,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58466f5e4b84c3644b59c0cda9018f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
   rb: {fileID: 438889885649412653}
   animator: {fileID: 6875453836467637678}
   isFacingRight: 1
-  dodgeButton: 104
+  dodgeButton: 9
   isDodging: 0
   dodgeTime: 0.2
   dodgeForce: 2.5
@@ -207,13 +206,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38049b83e5f17648b55d27e7867162c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 1
   attackButton: 32
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
-  attackDamage: 5
-  attackRate: 2
   slash: {fileID: 8853022901886208617, guid: d813a75e5cc3dc94883b472069fb8c0b, type: 3}
 --- !u!114 &6688226554663105478
 MonoBehaviour:
@@ -227,8 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fad9ea4d86f96c419e189b660a52d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
+  gameOverSceneName: GameOver
 --- !u!114 &7937353857194781201
 MonoBehaviour:
   m_ObjectHideFlags: 0

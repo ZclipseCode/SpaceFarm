@@ -33,7 +33,7 @@ public class Deposit : MonoBehaviour
     public int movementSpeedPrice;
     public int healthPrice;
     [SerializeField] PlayerUpgrades playerUpgrades;
-    int[] totalUpgrades = new int[5];
+    public static int[] totalUpgrades = new int[5];
 
     private void Start()
     {

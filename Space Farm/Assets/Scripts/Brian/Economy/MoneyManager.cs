@@ -11,11 +11,17 @@ public class MoneyManager : MonoBehaviour
     public static UpdateMoneyDelegate UpdateMoney;
 
     [SerializeField] int startingMoney;
+    public static bool singleton;
 
     private void Start()
     {
-        overallMoney = startingMoney;
-        currentMoney = startingMoney;
+        if (!singleton)
+        {
+            overallMoney = startingMoney;
+            currentMoney = startingMoney;
+            singleton = true;
+        }
+        
         UpdateMoney();
     }
 }

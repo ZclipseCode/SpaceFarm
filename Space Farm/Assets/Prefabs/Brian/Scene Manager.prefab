@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4572722906279297521
+--- !u!1 &1807606613736177465
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,55 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5518537823761414734}
-  - component: {fileID: 2804144559300918329}
-  - component: {fileID: 7727327277836133593}
+  - component: {fileID: 963923273231786221}
+  - component: {fileID: 4601750106951505880}
   m_Layer: 0
-  m_Name: Time Manager
+  m_Name: Scene Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5518537823761414734
+--- !u!4 &963923273231786221
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4572722906279297521}
+  m_GameObject: {fileID: 1807606613736177465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 625.66425, y: 701.52026, z: -5.029691}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2804144559300918329
+--- !u!114 &4601750106951505880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4572722906279297521}
+  m_GameObject: {fileID: 1807606613736177465}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a9a0000b955e9f43a68dcc7b3cd8539, type: 3}
+  m_Script: {fileID: 11500000, guid: 183de923cf4232249b54b3015e22e48f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayLength: 100
-  resultsSceneName: Results
---- !u!114 &7727327277836133593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4572722906279297521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e142dc8be5885842899c559d54ce000, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
